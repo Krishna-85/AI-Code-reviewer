@@ -13,7 +13,7 @@ const Home = () => {
         e.preventDefault()
         setIsModalOpen(false)
 
-        axios.post('http://localhost:3001/v1/api/projects/create',{
+        axios.post('http://localhost:3001/v1/api/projects/',{
             name:projectName
         }).then(response=>{
             console.log(response.data)
