@@ -27,3 +27,6 @@ io.on('connection', socket => {
  server.listen(3001, ()=>{
     console.log("server is running")
  })
+ app.get("/", (req, res) => {
+   res.send("Server is running!");
+ });
